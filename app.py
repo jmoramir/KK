@@ -1,8 +1,8 @@
 from flask import Flask,render_template
-from flask_cors import CORS
+#from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
 
 
 @app.route('/')
@@ -14,4 +14,4 @@ def prediciones():
     return 'predicciones'
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=5001)
